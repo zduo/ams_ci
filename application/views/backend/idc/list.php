@@ -18,7 +18,7 @@
                 <th class="span4">IDC地址</th>
                 <th class="span4">IDC描述</th>
                 <th class="span2">IDC线路</th>
-				<th class="span1">is_bgp</th>
+				<th class="span1">BGP</th>
 				<th class="span2"></th>
             </tr>
         </thead>
@@ -30,7 +30,7 @@
                     <td><?=$item['idc_location']?></td>                    
                     <td><?=$item['idc_desc']?></td>
 					<td><?=$item['idc_isp']?></td>
-					<td><?=$item['is_bgp']?></td>
+					<td><?=$item['is_bgp']==1?'YES':'NO';?></td>
 					<td>
                         <a href="<?=base_url('admin/idc/edit/'.$item['id'])?>" class="btn btn-mini">编辑</a>
                         <a href="<?=base_url('admin/idc/delete/'.$item['id'])?>" class="btn btn-mini btn-danger" onclick="return confirm('确定要删除吗？');">删除</a>

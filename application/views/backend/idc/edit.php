@@ -39,10 +39,10 @@
             </div>
         </div>
 		<div class="control-group">
-            <label class="control-label">is_bgp</label>
+            <label class="control-label">BGP</label>
             <div class="controls">
-                <input type="radio" name="is_bgp" value="yes" <? if($idc['is_bgp']!='no'){ echo 'checked'; }?> />YES
-				<input type="radio" name="is_bgp" value="no" <? if($idc['is_bgp']=='no'){ echo 'checked'; }?>/>NO
+                <input type="radio" name="is_bgp" value="1" <? if($idc['is_bgp']!=0){ echo 'checked'; }?> />YES
+				<input type="radio" name="is_bgp" value="0" <? if($idc['is_bgp']==0){ echo 'checked'; }?>/>NO
             </div>
         </div>
 

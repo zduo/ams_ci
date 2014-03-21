@@ -14,7 +14,7 @@
     <table class="table table-bordered table-striped table-hover">
         <thead>
             <tr>
-                <th class="span3">IDC</th>
+                <th class="span3">所在IDC</th>
                 <th class="span4">资产编号</th>
                 <th class="span4">所在机柜</th>
                 <th class="span2">品牌</th>

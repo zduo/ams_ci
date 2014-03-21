@@ -43,10 +43,10 @@
             </div>
         </div>
 		<div class="control-group">
-            <label class="control-label">is_bgp</label>
+            <label class="control-label">BGP</label>
             <div class="controls">
-                <input type="radio" name="is_bgp" value="yes" checked />YES
-				<input type="radio" name="is_bgp" value="no" />NO
+                <input type="radio" name="is_bgp" value="1" checked />YES
+				<input type="radio" name="is_bgp" value="0" />NO
             </div>
         </div>
     </div>

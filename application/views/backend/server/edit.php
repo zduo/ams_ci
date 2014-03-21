@@ -38,6 +38,8 @@
             <label class="control-label" for="<?=$k?>"><?=$v?></label>
             <div class="controls">
                 <input type="text" name="<?=$k?>" id="<?=$k?>" value="<?=$server[$k]?>" />
+				<?if($k=='server_memory') echo 'G';?>
+				<?if($k=='server_cpu_count') echo '个';?>
             </div>
         </div>
 	<?

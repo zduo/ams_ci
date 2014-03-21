@@ -80,7 +80,7 @@ class Idc_model extends CI_Model {
 		$bind['idc_location'] = $this->input->post('idc_location');
 		$bind['idc_desc'] = $this->input->post('idc_desc');
 		$bind['idc_isp'] = $this->input->post('idc_isp');
-		$bind['is_bgp'] = $this->input->post('is_bgp');
+		$bind['is_bgp'] = intval($this->input->post('is_bgp'));
         
         $status = $this->db->update($this->table, $bind, array('id'=>$idc_id));
         
@@ -93,7 +93,7 @@ class Idc_model extends CI_Model {
 		$bind['idc_location'] = $this->input->post('idc_location');
 		$bind['idc_desc'] = $this->input->post('idc_desc');
 		$bind['idc_isp'] = $this->input->post('idc_isp');
-		$bind['is_bgp'] = $this->input->post('is_bgp');
+		$bind['is_bgp'] = intval($this->input->post('is_bgp'));
 
 		$this->db->insert($this->table, $bind);
 		redirect('admin/idc');
